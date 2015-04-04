@@ -1,0 +1,361 @@
+
+/* header page style */
+
+html,body
+{
+    margin:0;
+}
+
+header
+{
+    background-color:#1F5C3D;
+    background-repeat:no-repeat;
+    height:110px;
+    top:0;
+    font-family:Calibri, sans-serif;
+    font-size:45px;
+    padding-top:0px;
+    text-align:left;
+    width:100%;
+    color: #FFF;
+}
+
+.logo
+{
+    float:left;
+}
+
+.logo img
+{
+    border:0;
+    height:110px;
+}
+
+#usernav
+{
+    display:block;
+    float:right;
+    font-family:Calibri, sans-serif;
+    font-size:medium;
+    height:auto;
+    padding-top:5px;
+    margin-right: 5px;
+    text-align:right;
+    width:35%;
+    color: #FFF;
+}
+
+#usernav a
+{
+    color:#FFF;
+    text-decoration: none;
+}
+
+#usernav a:hover
+{
+    text-decoration: underline;
+}
+
+/* site-navigation page style */
+
+nav
+{
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 60%;
+}
+
+nav a
+{
+    background-color:#1F5C3D;
+    border-right:1px solid #FFF;
+    color:#FFF;
+    cursor:pointer;
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-weight:700;
+    padding:10px 5px;
+    text-decoration:none;
+}
+
+nav a:hover
+{
+    background-color:#FFF;
+    color:#1F5C3D;
+}
+
+/* index page body style */
+
+#content
+{
+    clear:both;
+    height:auto;
+    min-height:350px;
+    padding-top:20px;
+}
+
+#profile-content
+{
+    clear:both;
+    height:auto;
+    min-height:350px;
+    padding-top:20px;
+    text-align: center;
+}
+.nav-table
+{
+    width: 100%;
+    border-collapse: collapse; 
+   
+}
+
+.breadcrumb-links {
+    margin-top: 15px;
+    padding-right: 5px;
+    text-align:right; 
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    text-decoration: none;
+    font-size: small;
+    
+}
+
+#breadcrumb
+{
+    color:#1F5C3D;
+}
+
+main
+{
+    
+    float:left;
+    height:auto;
+    min-height:350px;
+    padding:10px;
+    width:98%;
+}
+
+h2
+{
+    color:#1F5C3D;
+    font-family:Calibri, sans-serif;
+}
+
+
+h3
+{
+    display: block;
+    background-color:#1F5C3D;
+    color:#FFF;
+    font-family:Calibri, sans-serif;
+    padding:2px 2px 2px 5px;
+}
+
+h3.a {
+    color:#FFF;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+.catview li
+{
+    border:1px solid #1F5C3D;
+    color:#1F5C3D;
+    display:inline-block;
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    margin:5px;
+    padding:5px;
+    text-align:center;
+}
+
+.catview li:hover
+{
+    background-color:#1F5C3D;
+}
+
+.catview li a
+{
+    color:#1F5C3D;
+    text-decoration:none;
+}
+
+.catview li:hover a
+{
+    color:#FFF;
+}
+
+.caticon
+{
+    height:150px;
+    width:150px;
+}
+
+/* footer page style  */
+footer
+{
+    background-color:#1F5C3D;
+    clear:both;
+    color:#FFF;
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-size:small;
+    height:40px;
+    padding:10px;
+    width:98.5%;
+}
+
+p
+{
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-size:medium;
+}
+
+p a
+{
+    color:#77bfc7;
+    text-decoration:none;
+}
+
+.photoframe
+{
+    margin:0 auto;
+    width:650px;
+}
+
+.largephoto
+{
+    float:left;
+}
+
+.smallphoto
+{
+    float:right;
+}
+
+.largepic
+{
+    height:300px;
+    width:400px;
+}
+
+.smallpic
+{
+    height:70px;
+    width:120px;
+}
+
+table tr td
+{
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-size:medium;
+    text-align: center;
+}
+
+td{
+  text-align: center;   
+}
+
+table tr td.category
+{
+    font-weight:700;
+}
+
+.addtocartfooter
+{
+    text-align:right;
+    width:100%;
+}
+
+.button
+{
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-size:large;
+}
+
+#carttable
+{
+    margin:0 auto;
+    width:90%;
+    border-spacing:0;
+}
+
+#carttable tr:nth-child(odd)
+{
+    background-color:#fff;
+}
+
+#carttable tr:nth-child(even)
+{
+    background-color:#eee;
+}
+
+#carttable tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+#carttable tr td a:hover {
+    text-decoration: underline;
+}
+
+#carttable thead th
+{
+    background-color:#1F5C3D;
+    border-bottom:1px solid #1F5C3D;
+    color:#FFF;
+    font-family:Trebuchet MS, Calibri, sans-serif;
+    font-size:medium;
+    font-weight:700;
+    margin:0;
+    padding:5px;
+    text-align:left;
+    width:15%;
+}
+
+a.updatecart
+{
+    font-size:x-small;
+}
+
+.cartquantity
+{
+    width:50px;
+}
+
+.cartdelete
+{
+    cursor:pointer;
+    height:15px;
+    width:15px;
+}
+
+p.cartdetail
+{
+    margin-left:10px;
+}
+
+
+.footerleft
+{
+    float:left;
+    text-align:left;
+}
+
+.footerright
+{
+    float:right;
+    text-align:right;
+}
+
+.footerright a
+{
+    color:#FFF;
+}
+
+.socialicon
+{
+    height:20px;
+    width:20px;
+}
+
