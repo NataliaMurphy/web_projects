@@ -1,0 +1,172 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Nov, 2014, 12:43:18 PM
+    Author     : Admin
+*/
+
+#container
+{
+	margin: 0 auto;
+	width: 1000px;
+	color: white;
+}
+
+#header
+{
+	background: #6495ED url(image2.jpg) no-repeat;
+        padding: 50px;
+        width: 900px;
+}
+#header.img
+{
+    height:50px;
+    width: 50px;
+}
+
+#header h1 { margin: 0; }
+
+#navigation
+{
+	float: left;
+	width: 1000px;
+	background: #333;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#navigation li a:hover { background: #383; }
+
+#content-container
+{
+	float: left;
+	width: 1000px;
+	/* background: #fff url(/wp-content/uploads/layout-three-fixed-background.gif) repeat-y 100% 0; */
+}
+
+#section-navigation
+{
+	float: left;
+	width: 160px;
+	padding: 20px 0;
+	margin: 0 20px;
+	display: inline;
+}
+
+#section-navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#section-navigation ul li
+{
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+#section-navigation ul li a{
+    color:white;
+}
+#section-navigation ul li a:hover { color: red; }
+
+
+#content
+{
+	float: left;
+	width: 700px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+        height:500px;
+        
+	overflow-y: scroll;
+        
+	overflow: auto;
+        //background: url(ssdipic.jpg) no-repeat;
+      
+}
+
+#content a{
+    color:white;
+}
+#content a:hover { color: red; }
+
+#content th {
+    color:white;
+}
+
+#content td{
+    color:white;
+}
+#content-container{
+    background-color: cornflowerblue;
+}
+
+#content h2 { margin: 0; }
+
+.left-column,.details {
+    float:left;
+}
+.right-column {
+    float:right;
+}
+#aside
+{
+	float: right;
+	width: 200px;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+#aside h3 { margin: 0; }
+
+#footer
+{
+        color: #fff;
+        clear: left;
+	background: black;
+	text-align: right;
+	padding: 10px;
+	height: 1%;
+	
+       
+       
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+.searchbutton {
+    margin-left: 270px;
+    padding: 13px;
+    width: 92px;
+    border-radius: 12px;
+}
