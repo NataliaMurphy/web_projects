@@ -1,0 +1,268 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 Aug, 2014, 9:32:44 PM
+    Author     : Arj
+*/
+.orderlink{
+    position: absolute;
+    margin-left: 124px;
+    margin-top: -21px;
+    color: white;
+    background-color: black;
+}
+body {
+    color: white;
+    font-size: 20px;
+}
+.header_login{
+    padding-left: 29%;
+}
+.header {
+    border: 2px solid #0033FF;
+    padding:0px 0px 0px 35%;
+}
+.header img {
+    width:46%;
+}
+img {
+    width: 13%;
+}
+.user-navi {
+    border: 2px solid #0033FF;
+    padding:0px 0px 0px 40%;
+    margin-top: 5px;
+}
+.admin_link{
+    float: right;
+    padding-right: 3px;
+    margin-top: -23px;
+}
+.login-form{
+    width: 21%;
+    margin-left: 42%;
+}
+.title{
+   margin-left: 36%;
+   font-size: 27px;
+}
+.red {
+    margin-right: 2px;
+    background-color: red;
+}
+
+h4 {
+    margin:0px;
+}
+.footer {
+    border: 2px solid #0033FF;
+    margin-top: 47%;
+}
+.login {
+    float:right;
+    margin-top: -4%;
+}
+.area {
+    width:100%;
+}
+.gen-navi {
+    width: 20%;
+    border: 2px solid #0033FF;
+    margin-top: 5px;
+    float: left;
+}
+.main-content {
+    width: 57%;
+    float: right;
+    padding-top:1%;
+    margin-left: 2%;
+ }  
+.Category1 {
+    width: 32%;
+    float: right;
+    margin-top: 32%;
+    margin-right: 8%;
+}
+.Category2 {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+.Category3 {
+    width: 40%;
+    margin-left: 36%;
+}
+#main-content_items {
+    width: 78%;
+    float: right;
+    line-height: 17px;
+}
+.item_display {
+    width:47%;
+    float:left;
+}
+.item_display img{
+    width:23%;
+}
+.laptops {
+    float:right;
+    width:51%;
+}
+.clic {
+    float:left;
+    width: 33%;
+    padding: 11px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border-radius: 12px;
+    cursor:pointer;
+    margin-right: 17%;
+    margin-top: 5%;
+}
+#signup{
+    /* margin-top: 5%; */
+    padding-top: 7%;
+}
+#main-content_items .Mobiles form {
+    width:50%;
+    float:left;
+}
+#main-content_items .laptops form {
+    width:50%;
+    float:left;
+}
+.go-to-c {
+    float:right;
+    background-color: black;
+    color:white;
+    border-radius: 12px;
+    cursor:pointer;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 11px;
+}
+#navigation_links {
+    //margin-right: -7%;
+    width: 42%;
+    float: right;
+}
+a {
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color:red;
+    text-decoration:underline;
+    cursor: pointer;   
+}
+table, td {
+    border: 2px solid #0033FF;
+    /*width: 45%;*/
+}
+#one ,#two {
+    width:22%;
+    margin-left: 35%;
+}
+table {
+    width:68%;
+}
+.cart {
+    width: 18%;
+    padding: 11px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 73%;
+    background-color: black;
+    color:white;
+    border-radius: 12px;
+    cursor:pointer;
+}
+.wrapper {
+    margin: 0 auto 10px;
+    width: 1200px;
+    border: 2px solid #0033FF;
+    background-color: #40E0D0;
+    background-image: url('../images/pcb7.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.links {
+    margin-bottom: 95%;
+    width: 61%;
+    margin-top: 17%;
+    margin-left: 6%;
+    line-height: 35px;
+}
+.footer img{
+    width: 2%;
+}
+
+li{
+    padding: 8px;
+}
+
+#Amt{
+    float: right;
+    margin-right: 35%;
+}
+#subtotal {
+    float: right;
+    margin-right: 20%;
+}
+.search {
+    background: url('../images/search-img.png')no-repeat;
+    padding-left: 31px;
+    float: right;
+    margin-right: 7%;
+    width: 20%;
+    height: 20px;
+    color: white;
+}
+.ads {
+    width: 20%;
+    float: left;
+    margin-top: 8%;
+    margin-left: 0%;
+    padding-left: 7px;
+}
+.ads img{
+    width: 50%;
+    cursor:pointer;
+}
+/*.password {
+    float:right;
+}*/
+.number {
+    padding-left: 51px;
+}
+.amount {
+    padding-left: 39px;
+}
+.left{
+    width: 48%;
+    float: left;
+}
+.right {
+    width: 47%;
+    float: right;
+}
+#content {
+    clear: both;
+    height: auto;
+    min-height: 350px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.endnote{
+    margin-left: 33%;
+}
+#loglink{
+    color:blue;
+}
