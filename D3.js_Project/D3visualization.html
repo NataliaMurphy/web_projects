@@ -1,0 +1,415 @@
+<!doctype html>
+
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+
+<script src="http://www.d3plus.org/js/d3.js"></script>
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+
+
+<div id="viz"></div>
+
+<script>
+
+  var data = [
+    
+ {
+    "PrimeType":"Paid Parking",
+    "Occupancy":2,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":1,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":5,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":3,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":2,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":1,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":8,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":12,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":3,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":8,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":10,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":3,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":10,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":24,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":1,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":36,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":15,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":13,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":1,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":10,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":23,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":23,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":34,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":45,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":34,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":18,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":12,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":24,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":12,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Occupancy":28,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":3,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Occupancy":99,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":8,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":6,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":12,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":9,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":15,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":9,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":20,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":6,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":26,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":17,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":10,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":6,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":23,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":12,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":4,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":7,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Occupancy":3,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Occupancy":23,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Occupancy":17,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":27,
+    "Hour":"8:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":56,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":180,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":121,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":300,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":90,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":40,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":21,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":120,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":90,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":87,
+    "Hour":"10:00 AM"
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Occupancy":30,
+    "Hour":"10:00 AM"
+  }
+  ]
+
+  var visualization = d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("box")
+    .id("PrimeType")
+    .x("Hour")
+    .y("Occupancy")
+  .time("Occupancy")
+  .size("Occupancy")
+  .color("PrimeType")
+  .legend({"size": 50})
+  .title("Types of Visualizations")
+    
+    
+    .ui([{ 
+        "label": "Visualization Type",
+        "method": "type", 
+        "value": ["box","scatter","bubbles"]
+    },
+         {
+        "method" : "color",
+        "value"  : [ "PrimeType" , "Occupancy" ]
+      },
+         
+      ])
+    .draw()
+
+</script>
